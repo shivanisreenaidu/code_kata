@@ -1,0 +1,46 @@
+<center>
+<form name="my">
+ENTER THE VALUE:<input type="text" name="input1">
+<br>
+<br>
+THE ANSWER IS:<input type="text" name="input2">
+<br>
+<br>
+<input type='button' value='KILO-TO-POUND'  onclick="ktp()">
+<input type='button' value='POUND-TO-KILO'  onclick="ptk()">
+<br>
+<br>
+<input type='button' value='METER-TO-YARDS'  onclick="mty()">
+<input type='button' value='YARDS-TO-METER'  onclick="ytm()">
+<br>
+<br>
+<input type='button' value='CELSIUS-TO-FAHRENHEIT'  onclick="ctf()">
+<input type='button' value='FAHRENHEIT-TO-CELSIUS'  onclick="ftc()">
+</form>
+</center>
+<script>
+function ktp()
+{
+my.input2.value=parseInt(my.input1.value)*2.208;
+}
+function ptk()
+{
+my.input2.value=parseInt(my.input1.value)/2.208;
+}
+function mty()
+{
+my.input2.value=parseInt(my.input1.value)*1.09361;
+}
+function ytm()
+{
+my.input2.value=parseInt(my.input1.value)/1.09361;
+}
+function ctf()
+{
+my.input2.value=(parseInt(my.input1.value)/18)-32;
+}
+function ftc()
+{
+my.input2.value=(parseInt(my.input1.value)*18)+32;
+}
+</script>
